@@ -13,3 +13,4 @@ vim.opt.signcolumn = "yes"
 vim.opt.updatetime = 250
 vim.opt.splitright = true
 vim.opt.splitbelow = true
+
