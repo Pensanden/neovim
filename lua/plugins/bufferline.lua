@@ -1,9 +1,9 @@
 return {
-  "akinsho/bufferline.nvim",
+        "akinsho/bufferline.nvim",
   dependencies = { "nvim-tree/nvim-web-devicons" },
   version = "*",
   opts = {
-    options = {
+            options = {
       mode = "tabs",
       separator_style = "thin",
       diagnostics = "nvim_lsp",

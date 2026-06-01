@@ -13,7 +13,13 @@ return {
         defaults = {
           layout_strategy = "horizontal",
           layout_config = { preview_width = 0.55 },
-          file_ignore_patterns = { "node_modules", ".git/" },
+          file_ignore_patterns = { 
+            "node_modules",
+            ".git/*",
+ "^bin/", "^obj/",
+      "%.dll$", "%.exe$", "%.pdb$", "%.nupkg$",
+      "%.suo$", "%.user$",
+          },
         },
       })
 
