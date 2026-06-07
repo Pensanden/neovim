@@ -25,4 +25,4 @@ vim.api.nvim_create_autocmd({ "VimResized" }, {
   end,
 })
 vim.opt.lazyredraw = false
-
+-- vim.lsp.codelens.clear()

@@ -27,6 +27,11 @@ return {
 					"--hostPID",
 					tostring(vim.fn.getpid()),
 				},
+				settings = {
+					["csharp|code_lens"] = {
+						dotnet_enable_references_code_lens = false,
+					},
+				},
 				init_options = {
 					-- fixes the Razor.Compiler analyzer crash
 					enableRoslynAnalyzers = true,
