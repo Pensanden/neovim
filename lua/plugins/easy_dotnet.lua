@@ -41,8 +41,7 @@ return -- lazy.nvim
 						request_timeout = 5000,
 					},
 				},
-				config = {
-				},
+				config = {},
 			},
 			debugger = {
 				-- Path to custom coreclr DAP adapter
@@ -53,6 +52,7 @@ return -- lazy.nvim
 				auto_register_dap = true,
 				mappings = {
 					open_variable_viewer = { lhs = "T", desc = "open variable viewer" },
+					-- add this keymap
 				},
 			},
 			---@type TestRunnerOptions

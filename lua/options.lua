@@ -17,12 +17,13 @@ vim.opt.splitright = true
 vim.opt.splitbelow = true
 vim.opt.scrolloff = 10
 
-vim.keymap.set("n", "J", vim.diagnostic.open_float, { buffer = bufnr, desc = "Show diagnostic" })
+vim.keymap.set("n", "N", vim.diagnostic.open_float, { buffer = bufnr, desc = "Show diagnostic" })
 
 vim.api.nvim_create_autocmd({ "VimResized" }, {
   callback = function()
     vim.cmd("wincmd =")
   end,
 })
+
+vim.o.termbidi = true
 vim.opt.lazyredraw = false
--- vim.lsp.codelens.clear()
